@@ -1,0 +1,111 @@
+﻿@model List<CollectionUserPkm>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] ?? "Álbum Pokémon"</title>
+    <link rel="stylesheet" href="~/css/Styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<nav class="navbar retro-navbar mb-4">
+    <div class="container-fluid">
+
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Profile" asp-action="Index">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Index">Pokemon</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Friends" asp-action="Friends">Friends</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Trade" asp-action="Trade">Trade</a></li>
+            <li class="nav-item">
+                <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                    <button type="submit" class="nav-link btn btn-link" style="text-decoration: none;">
+                        Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+@{
+    int columnasPorFila = 5;
+    int totalPokemon = Model.Count;
+}
+
+@for (int i = 0; i < totalPokemon; i += columnasPorFila)
+{
+    <div class="pokemon-row" style="display: flex; flex-wrap: wrap; gap: 10px;">
+        @foreach (var pkm in Model.Skip(i).Take(columnasPorFila))
+        {
+            var hasPokemon = pkm.Count > 0;
+            var gifAvailable = hasPokemon && pkm.PokemonId <= 649;
+
+            var imageUrl = gifAvailable
+            ? $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/{pkm.PokemonId}.gif"
+            : $"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{pkm.PokemonId}.png";
+
+            var imageStyle = hasPokemon ? "" : "filter: brightness(0) contrast(100%); opacity: 0.6;";
+            var titleText = hasPokemon ? pkm.Name.ToUpper() : "???";
+            var caughtDate = hasPokemon ? pkm.CaughtAt.ToShortDateString() : "—";
+
+            if (hasPokemon)
+            {
+                <a href="@Url.Action("Details", "Pokemon", new { pokemonName = pkm.Name })" class="card-link">
+                    <div class="pokemon-card">
+                        @if (pkm.Count > 1)
+                        {
+                            <span class="duplicates-badge">@pkm.Count</span>
+                        }
+
+                        <img class="pokemon-img"
+                             src="@imageUrl"
+                             alt="@titleText"
+                             style="@imageStyle" />
+
+                        <div class="card-title">#@pkm.PokemonId - @titleText</div>
+                        <div class="caught-date">Caught: @caughtDate</div>
+                    </div>
+                </a>
+            }
+            else
+            {
+                <div class="pokemon-card">
+                    <img class="pokemon-img"
+                         src="@imageUrl"
+                         alt="???"
+                         style="@imageStyle" />
+
+                    <div class="card-title">#@pkm.PokemonId - ???</div>
+                    <div class="caught-date">Caught: —</div>
+                </div>
+            }
+        }
+      
+
+    </div>
+   
+}
+<div class="pagination">
+    @if ((int)ViewData["CurrentPage"] > 1)
+    {
+        <a href="@Url.Action("Album", new { page = (int)ViewData["CurrentPage"] - 1 })">« Previous</a>
+    }
+
+    @for (int i = 1; i <= (int)ViewData["TotalPages"]; i++)
+    {
+        if (i == (int)ViewData["CurrentPage"])
+        {
+            <span class="active">@i</span>
+        }
+        else
+        {
+            <a href="@Url.Action("Album", new { page = i })">@i</a>
+        }
+    }
+
+    @if ((int)ViewData["CurrentPage"] < (int)ViewData["TotalPages"])
+    {
+        <a href="@Url.Action("Album", new { page = (int)ViewData["CurrentPage"] + 1 })">Next »</a>
+    }
+</div>
+

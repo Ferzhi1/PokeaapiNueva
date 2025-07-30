@@ -1,0 +1,99 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    background-color: #fffbcc;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.retro-navbar {
+    background-color: #fcd34d;
+    border-bottom: 4px solid #444;
+    box-shadow: 0 4px #333;
+    font-family: 'Press Start 2P', cursive;
+}
+
+    .retro-navbar .navbar-brand {
+        color: #222;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .retro-navbar .nav-link {
+        color: #111;
+        border: 2px solid #222;
+        background-color: #fff;
+        margin-left: 0.5rem;
+        padding: 6px 10px;
+        text-decoration: none;
+        box-shadow: 2px 2px #444;
+        transition: all 0.2s ease;
+    }
+
+        .retro-navbar .nav-link:hover {
+            background-color: #fbbf24;
+            color: #000;
+        }
+
+        .retro-navbar .nav-link.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+
+.badge {
+    display: inline-block;
+    background-color: #222;
+    color: #fff176;
+    border: 2px solid #000;
+    padding: 6px 12px;
+    font-size: 10px;
+    border-radius: 6px;
+    box-shadow: 2px 2px #444;
+}
+
+.logout-btn {
+    font-size: 0.5rem;
+    padding: 6px 10px;
+    background-color: #dc3545;
+    color: #fff;
+    border: 2px solid #bd2130;
+    box-shadow: 2px 2px #333;
+    text-transform: uppercase;
+    border-radius: 4px;
+    text-decoration: none !important;
+    min-width: 100px;
+    cursor: pointer;
+}
+
+    .logout-btn:hover {
+        background-color: #f87171;
+        color: #000;
+    }
+
+.weather-card {
+    background-color: #fff;
+    border: 3px solid #000;
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 4px 4px #999;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+    .weather-card h4 {
+        font-size: 12px;
+        color: #e60012;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+.weather-detail {
+    font-size: 10px;
+    color: #333;
+}

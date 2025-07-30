@@ -1,0 +1,41 @@
+﻿<head>
+    <link rel="stylesheet" href="~/css/StyleProfile.css" />
+</head>
+
+<body>
+    <nav class="navbar retro-navbar mb-4">
+        <div class="container-fluid">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Friends" asp-action="Friends">Friends</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Pokemon" asp-action="Index">Pokemon</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Pokemon" asp-action="Album">Album</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" asp-controller="Trade" asp-action="Trade">Trade</a>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="retro-card user-info-card">
+        <div class="retro-header">
+            <h2>WELCOME, @ViewBag.User.Name.ToUpper()</h2>
+        </div>
+        <div class="retro-body">
+            <p><strong>City:</strong> <span class="badge">@ViewBag.User.City</span></p>
+
+          
+            <div class="weather-card">
+                <h4>Weather Info</h4>
+                <p class="weather-detail"><strong>Currently Weather:</strong> <span class="badge">@ViewBag.Weather</span></p>
+            </div>
+        </div>
+    </div>
+
+</body>

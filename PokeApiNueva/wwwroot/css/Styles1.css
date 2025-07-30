@@ -1,0 +1,117 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset general */
+* {
+    box-sizing: border-box;
+}
+
+/* Fondo retro y centrado */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #fffbcc;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+.page-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tarjeta de recuperación */
+.forgot-password-container {
+    background-color: #fff176;
+    border: 4px solid #333;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.5);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+    /* Título */
+    .forgot-password-container h2 {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: #e60012;
+        text-shadow: 1px 1px #000;
+    }
+
+/* Formulario */
+.forgot-password-form {
+    width: 100%;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Etiquetas */
+label {
+    font-size: 10px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Inputs */
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 10px;
+    font-family: 'Press Start 2P', cursive;
+    border: 2px solid #555;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* Validaciones */
+.text-danger {
+    font-size: 10px;
+    color: #e60012;
+}
+
+/* Botón */
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #e60012;
+    color: white;
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    border: 3px solid #990000;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+    button[type="submit"]:hover {
+        background-color: #ff0000;
+    }
+
+/* Enlace */
+.forgot-password-container p {
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+    .forgot-password-container p a {
+        color: #005eff;
+        text-decoration: none;
+    }
+
+        .forgot-password-container p a:hover {
+            text-decoration: underline;
+        }

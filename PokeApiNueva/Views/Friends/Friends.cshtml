@@ -1,0 +1,112 @@
+﻿@model IEnumerable<PokeApiNueva.Models.FriendViewModel>
+@using PokeApiNueva.Models
+
+@{
+	ViewData["Title"] = "View Friends";
+}
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>@ViewData["Title"]</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/css/Friendship.css">
+</head>
+
+<h2>Friendship Requests</h2>
+
+<nav class="navbar retro-navbar mb-4">
+	<div class="container-fluid">
+
+		<ul class="nav justify-content-end">
+			<li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Profile" asp-action="Index">Profile</a></li>
+			<li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Index">Pokemon</a></li>
+			<li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Album">Album</a></li>
+			<li class="nav-item"><a class="nav-link" asp-controller="Trade" asp-action="Trade">Trade</a></li>
+			<li class="nav-item">
+			
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<div class="table-row">
+
+	<div>
+		<h4>Requests and Submissions</h4>
+		<table class="table table-bordered retro-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Status</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.Where(i =>
+									i.Statusfriendship == FriendshipStatus.Pending ||
+									i.Statusfriendship == FriendshipStatus.None ||
+									i.Statusfriendship == FriendshipStatus.Rejected))
+				{
+					<tr>
+						<td>@item.User.Name</td>
+						<td>@item.User.Email</td>
+						<td>
+							@switch (item.Statusfriendship)
+							{
+								case FriendshipStatus.Pending:
+									<span class="text-warning">Pending Request</span>
+									break;
+								case FriendshipStatus.None:
+									<span class="text-muted">No Relationship</span>
+									break;
+								case FriendshipStatus.Rejected:
+									<span class="text-danger">Rejected</span>
+									break;
+							}
+						</td>
+						<td>
+							@if (item.Statusfriendship == FriendshipStatus.None || item.Statusfriendship == FriendshipStatus.Rejected)
+							{
+								<a asp-controller="Friends" asp-action="AddFriend" asp-route-id="@item.User.Id" class="btn btn-primary btn-sm">Send Request</a>
+							}
+							else if (item.Statusfriendship == FriendshipStatus.Pending)
+							{
+								<a asp-controller="Friends" asp-action="AcceptFriend" asp-route-id="@item.User.Id" class="btn btn-success btn-sm">Accept</a>
+								<a asp-controller="Friends" asp-action="RejectFriend" asp-route-id="@item.User.Id" class="btn btn-danger btn-sm ms-1">Reject</a>
+							}
+						</td>
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+
+	<div>
+		<h4>Friends</h4>
+		<table class="table table-bordered retro-table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody>
+				@foreach (var item in Model.Where(i => i.Statusfriendship == FriendshipStatus.Accepted))
+				{
+					<tr>
+						<td>@item.User.Name</td>
+						<td>@item.User.Email</td>
+						<td><span class="text-success">Friends</span></td>
+
+
+					</tr>
+				}
+			</tbody>
+		</table>
+	</div>
+
+</div>

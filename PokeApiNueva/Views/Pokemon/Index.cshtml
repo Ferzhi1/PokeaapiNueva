@@ -1,0 +1,113 @@
+﻿@model PokeApiNueva.Models.Pokemon
+
+@{
+    ViewData["Title"] = "Pokemon Details";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+
+ 
+    <link href="~/css/RetroStyle.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 class="text-center">@Model.Name.ToUpper() Details</h1>
+
+
+    <nav class="navbar retro-navbar mb-4">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="@($"https://play.pokemonshowdown.com/sprites/ani/{Model.Name.ToLower()}.gif")"
+                     alt="@Model.Name sprite gif"
+                     style="width:150px; height:150px;" />
+                POKEMON
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Profile" asp-action="Index">Profile</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Friends" asp-action="Friends">Friends</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Album">Album</a></li>
+                <li class="nav-item"><a class="nav-link" asp-controller="Trade" asp-action="Trade">Trade</a></li>
+                <li class="nav-item">
+                    <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                        <button type="submit" class="nav-link btn btn-link" style="text-decoration: none;">
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form asp-controller="Pokemon" asp-action="Index" method="get" class="mb-3">
+        <div class="input-group">
+            <input type="text" name="pokemonName" class="form-control" placeholder="Enter your Pokémon's name" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </div>
+    </form>
+    <main class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="retro-card">
+                    <div class="retro-header">
+                        <h2>@Model.Name.ToUpper() DETAILS</h2>
+                    </div>
+                    <div class="retro-body">
+                        <img src="@($"https://play.pokemonshowdown.com/sprites/ani/{Model.Name.ToLower()}.gif")"
+                             alt="@Model.Name sprite"
+                             class="retro-sprite" />
+
+                        <p><strong>ID:</strong> @Model.Id</p>
+                        <p><strong>Height:</strong> @Model.Height decimetres</p>
+                        <p><strong>Weight:</strong> @Model.Weight hectograms</p>
+
+                        <h4>ABILITIES:</h4>
+                        <ul class="retro-list">
+                            @foreach (var abilitySlot in Model.Abilities ?? new List<PokeApiNueva.Models.AbilitySlot>())
+                            {
+                                <li>@abilitySlot.Ability?.Name?.Replace("-", " ").ToUpper()</li>
+                            }
+                        </ul>
+
+                        <h4>TYPES:</h4>
+                        <ul class="retro-list">
+                            @foreach (var typeSlot in Model.Types ?? new List<PokeApiNueva.Models.TypeSlot>())
+                            {
+                                <li>@typeSlot.Type?.Name?.ToUpper()</li>
+                            }
+                        </ul>
+
+                        <h4>STATS:</h4>
+                        <ul class="retro-list">
+                            @foreach (var statSlot in Model.Stats ?? new List<PokeApiNueva.Models.StatSlot>())
+                            {
+                                <li>
+                                    <strong>@statSlot.Stat?.Name.ToUpper()</strong>: @statSlot.Base_Stat
+                                    <div class="retro-bar">
+                                        <div class="retro-fill" style="width:@(Math.Min(statSlot.Base_Stat, 255) / 255.0 * 100)%;">
+                                        </div>
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-flex justify-content-center align-items-center">
+                <img src="@($"https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/{Model.Id:D3}.png")"
+                     alt="@Model.Name sprite"
+                     style="width: 600px; height: auto;" />
+            </div>
+        </div>
+
+        <form asp-controller="Pokemon" asp-action="Capture" method="post" class="mt-4 text-center">
+            <button type="submit" class="btn btn-warning">Catch Pokémon (1 Credit)</button>
+        </form>
+    </main>
+</body>
+</html>

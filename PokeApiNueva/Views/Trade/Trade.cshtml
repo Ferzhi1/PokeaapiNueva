@@ -1,0 +1,72 @@
+﻿@using System.Security.Claims
+@model PokeApiNueva.Models.TradeRequest
+
+@{
+    ViewData["Title"] = "Trade Pokémon";
+
+    var currentUserId = Model.fromUserId;
+    var allUsers = (SelectList)ViewBag.Users;
+    var recipients = allUsers.Where(u => u.Value != currentUserId.ToString()).ToList();
+    var currentUserEmail = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+}
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PokeApiNueva</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+ 
+    <link rel="stylesheet" href="~/css/RetroStyle.css" />
+</head>
+
+
+<h2>Trade Pokémon</h2>
+<nav class="navbar retro-navbar mb-4">
+    <div class="container-fluid">
+       
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Profile" asp-action="Index">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Friends" asp-action="Friends">Friends</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Album">Album</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Index">Pokemon</a></li>
+            <li class="nav-item">
+                <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                    <button type="submit" class="nav-link btn btn-link" style="text-decoration: none;">
+                        Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<h2 class="retro-header">Trade Pokémon</h2>
+
+<form asp-action="Trade" method="post" class="retro-form">
+
+    <div class="retro-body">
+        <label>Your Email</label>
+        <input type="text" value="@currentUserEmail" readonly />
+        <input type="hidden" asp-for="fromUserId" value="@currentUserId" />
+    </div>
+
+    <div class="retro-body">
+        <label>Choose a player to trade with</label>
+        <select asp-for="ToUserId" required>
+            <option value="">-- Select a player --</option>
+            @foreach (var user in recipients)
+            {
+                <option value="@user.Value">@user.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="retro-body">
+        <label>Select your Pokémon to trade</label>
+        <select asp-for="PokemonId" asp-items="ViewBag.Pokemons" required></select>
+    </div>
+
+    <button type="submit" class="btn-primary">Send Trade Request</button>
+</form>

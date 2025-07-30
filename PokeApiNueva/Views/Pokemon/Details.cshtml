@@ -1,0 +1,97 @@
+﻿@model PokeApiNueva.Models.Pokemon
+@{
+    ViewData["Title"] = "Pokemon Details";
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Details</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/retro.css">
+</head>
+
+<nav class="navbar retro-navbar mb-4">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="@($"https://play.pokemonshowdown.com/sprites/ani/{Model.Name.ToLower()}.gif")"
+                 alt="@Model.Name sprite gif"
+                 style="width:150px; height:150px;" />
+            POKEMON
+        </a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" asp-controller="Profile" asp-action="Index">Profile</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Friends" asp-action="Friends">Friends</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Pokemon" asp-action="Album">Album</a></li>
+            <li class="nav-item"><a class="nav-link" asp-controller="Trade" asp-action="Trade">Trade</a></li>
+            <li class="nav-item">
+                <form asp-controller="Auth" asp-action="Logout" method="post" class="d-inline">
+                    <button type="submit" class="nav-link btn btn-link" style="text-decoration: none;">
+                        Logout
+                    </button>
+                </form>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="retro-card pokemon-detail-card">
+    <div class="retro-header">
+        <h2>@Model.Name.ToUpper()</h2>
+    </div>
+
+    <div class="retro-body">
+        <p><strong>ID:</strong> @Model.Id</p>
+        <p><strong>Height:</strong> @Model.Height dm</p>
+        <p><strong>Weight:</strong> @Model.Weight hg</p>
+
+        
+        <h4>TYPES</h4>
+        <ul class="retro-list">
+            @foreach (var typeSlot in Model.Types ?? new List<PokeApiNueva.Models.TypeSlot>())
+            {
+                <li>@typeSlot.Type?.Name?.ToUpper()</li>
+            }
+        </ul>
+
+     
+        @if (Model.Id <= 649)
+        {
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/@(Model.Id).gif"
+                 alt="@Model.Name GIF"
+                 class="pokemon-img" />
+        }
+        else if (!string.IsNullOrEmpty(Model.Sprites?.Front_Default))
+        {
+            <img src="@Model.Sprites.Front_Default"
+                 alt="@Model.Name sprite"
+                 class="pokemon-img" />
+        }
+
+       
+        <h4>ABILITIES</h4>
+        <ul class="retro-list">
+            @foreach (var ability in Model.Abilities ?? new List<PokeApiNueva.Models.AbilitySlot>())
+            {
+                <li>@ability.Ability?.Name?.ToUpper()</li>
+            }
+        </ul>
+
+        
+        <h4>STATS</h4>
+        <ul class="retro-list">
+            @foreach (var stat in Model.Stats ?? new List<PokeApiNueva.Models.StatSlot>())
+            {
+                <li>
+                    <strong>@stat.Stat.Name.ToUpper()</strong>: @stat.Base_Stat
+                    <div class="retro-bar">
+                        <div class="retro-fill" style="width:@Math.Min(stat.Base_Stat, 255) / 255.0 * 100%;"></div>
+                    </div>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
+
