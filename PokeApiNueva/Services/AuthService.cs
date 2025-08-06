@@ -43,7 +43,8 @@ namespace PokeApiNueva.Services
                 Password = hashedPassword,
                 SecurityQuestion = question,
                 SecurityAnswer = hashAnswer,
-                City= city
+                City= city,
+                Role = Roles.User
             };
             _context.Userpkmns.Add(newUser);
             await _context.SaveChangesAsync();

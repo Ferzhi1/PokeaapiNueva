@@ -38,12 +38,13 @@
                 <div class="form-group">
                     <label>Security Question:</label>
                     <select asp-for="SecurityQuestion" class="form-select" required>
-                        <option value="" selected disabled>Choose A Question?</option>
-                        <option>Name of your pet</option>
-                        <option>Name of your cousin</option>
-                        <option>What city met your fathers?</option>
-                        <option>What is your favorite team of soccer?</option>
+                        <option value="" selected disabled>Select a security question</option>
+                        <option value="PetName">What is the name of your pet?</option>
+                        <option value="CousinName">What is the name of your cousin?</option>
+                        <option value="MeetingCity">In which city did your parents meet?</option>
+                        <option value="FavoriteSoccerTeam">What is your favorite soccer team?</option>
                     </select>
+
                 </div>
 
                 <div class="form-group">

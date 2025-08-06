@@ -3,9 +3,10 @@
     "",
     "\\PokeApiNueva",
     "\\PokeApiNueva\\Controllers",
-    "\\PokeApiNueva\\Models",
-    "\\PokeApiNueva\\Services"
+    "\\PokeApiNueva\\Services",
+    "\\PokeApiNueva\\Views",
+    "\\PokeApiNueva\\Views\\Pokemon"
   ],
-  "SelectedNode": "\\PokeApiNueva.sln",
+  "SelectedNode": "\\PokeApiNueva\\Views\\Pokemon\\Index.cshtml",
   "PreviewInSolutionExplorer": false
 }

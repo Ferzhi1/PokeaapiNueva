@@ -7,36 +7,24 @@
       "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\pokemon\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\friends\\friends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\friends\\friends.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\pokemon\\album.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\pokemon\\album.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\pokemon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\pokemon\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\auth\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\profile\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\services\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\views\\trade\\trade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\views\\trade\\trade.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\wwwroot\\css\\retrostyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\wwwroot\\css\\retrostyle.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\wwwroot\\css\\styletrade.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\wwwroot\\css\\styletrade.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\wwwroot\\css\\styleprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\wwwroot\\css\\styleprofile.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|c:\\users\\hmelo003\\source\\repos\\pokeapinueva\\pokeapinueva\\models\\userpkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5DC250F-04A0-4F03-B421-FB9E4EDFCD09}|PokeApiNueva\\PokeApiNueva.csproj|solutionrelative:pokeapinueva\\models\\userpkm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,21 +34,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Pokemon\\Details.cshtml",
-              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Pokemon\\Details.cshtml",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Pokemon\\Details.cshtml",
-              "RelativeToolTip": "PokeApiNueva\\Views\\Pokemon\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T16:50:27.111Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -69,101 +44,72 @@
               "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Pokemon\\Index.cshtml",
               "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Pokemon\\Index.cshtml",
               "RelativeToolTip": "PokeApiNueva\\Views\\Pokemon\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABoAAAAAAAAAA==",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAGoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T16:50:17.043Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Trade.cshtml",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Trade\\Trade.cshtml",
-              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Trade\\Trade.cshtml",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Trade\\Trade.cshtml",
-              "RelativeToolTip": "PokeApiNueva\\Views\\Trade\\Trade.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T16:41:24.598Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Profile\\Index.cshtml",
-              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Profile\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Profile\\Index.cshtml",
-              "RelativeToolTip": "PokeApiNueva\\Views\\Profile\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T16:26:45.39Z",
+              "WhenOpened": "2025-08-06T16:43:38.501Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Friends.cshtml",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Friends\\Friends.cshtml",
-              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Friends\\Friends.cshtml",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Friends\\Friends.cshtml",
-              "RelativeToolTip": "PokeApiNueva\\Views\\Friends\\Friends.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAABbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T15:57:35.244Z",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "PokeApiNueva\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "PokeApiNueva\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwDIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:40:00.297Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Album.cshtml",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Pokemon\\Album.cshtml",
-              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Pokemon\\Album.cshtml",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Pokemon\\Album.cshtml",
-              "RelativeToolTip": "PokeApiNueva\\Views\\Pokemon\\Album.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABkAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Program.cs",
+              "RelativeDocumentMoniker": "PokeApiNueva\\Program.cs",
+              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Program.cs",
+              "RelativeToolTip": "PokeApiNueva\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:34:33.377Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Auth\\Register.cshtml",
+              "RelativeDocumentMoniker": "PokeApiNueva\\Views\\Auth\\Register.cshtml",
+              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Views\\Auth\\Register.cshtml",
+              "RelativeToolTip": "PokeApiNueva\\Views\\Auth\\Register.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAC4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-30T15:51:36.07Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-06T16:32:17.019Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "StyleProfile.css",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\StyleProfile.css",
-              "RelativeDocumentMoniker": "PokeApiNueva\\wwwroot\\css\\StyleProfile.css",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\StyleProfile.css",
-              "RelativeToolTip": "PokeApiNueva\\wwwroot\\css\\StyleProfile.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-30T16:20:17.745Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Services\\AdminService.cs",
+              "RelativeDocumentMoniker": "PokeApiNueva\\Services\\AdminService.cs",
+              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Services\\AdminService.cs",
+              "RelativeToolTip": "PokeApiNueva\\Services\\AdminService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:24:56.501Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RetroStyle.css",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\RetroStyle.css",
-              "RelativeDocumentMoniker": "PokeApiNueva\\wwwroot\\css\\RetroStyle.css",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\RetroStyle.css",
-              "RelativeToolTip": "PokeApiNueva\\wwwroot\\css\\RetroStyle.css",
-              "ViewState": "AgIAALIAAAAAAAAAAAAowNgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-30T15:48:13.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StyleTrade.css",
-              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\StyleTrade.css",
-              "RelativeDocumentMoniker": "PokeApiNueva\\wwwroot\\css\\StyleTrade.css",
-              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\wwwroot\\css\\StyleTrade.css",
-              "RelativeToolTip": "PokeApiNueva\\wwwroot\\css\\StyleTrade.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-07-30T16:42:17.178Z",
-              "EditorCaption": ""
+              "DocumentIndex": 5,
+              "Title": "Userpkm.cs",
+              "DocumentMoniker": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Models\\Userpkm.cs",
+              "RelativeDocumentMoniker": "PokeApiNueva\\Models\\Userpkm.cs",
+              "ToolTip": "C:\\Users\\hmelo003\\source\\repos\\PokeApiNueva\\PokeApiNueva\\Models\\Userpkm.cs",
+              "RelativeToolTip": "PokeApiNueva\\Models\\Userpkm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T16:24:43.85Z"
             }
           ]
         }

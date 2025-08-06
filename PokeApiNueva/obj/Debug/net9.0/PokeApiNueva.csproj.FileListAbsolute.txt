@@ -256,3 +256,4 @@ C:\Users\hmelo003\source\repos\PokeApiNueva\PokeApiNueva\obj\Debug\net9.0\compre
 C:\Users\hmelo003\source\repos\PokeApiNueva\PokeApiNueva\obj\Debug\net9.0\compressed\ra9knfuks5-apnpxck43l.gz
 C:\Users\hmelo003\source\repos\PokeApiNueva\PokeApiNueva\obj\Debug\net9.0\compressed\gb26cqcat5-dyjx89twm7.gz
 C:\Users\hmelo003\source\repos\PokeApiNueva\PokeApiNueva\obj\Debug\net9.0\compressed\xshd3lhrby-gzfwkfwo8p.gz
+C:\Users\hmelo003\source\repos\PokeApiNueva\PokeApiNueva\obj\Debug\net9.0\PokeApiNueva.sourcelink.json

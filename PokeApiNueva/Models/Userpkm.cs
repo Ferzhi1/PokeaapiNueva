@@ -18,5 +18,12 @@
         public DateTime?  LastCreditDate {get; set;}
 
         public string City { get; set; }
+
+        public Roles Role { get; set; } = Roles.User;
+    }
+    public enum Roles
+    {
+        User = 0,
+        Admin = 1
     }
 }

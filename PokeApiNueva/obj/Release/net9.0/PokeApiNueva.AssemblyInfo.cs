@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokeApiNueva")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c629d8f9eab8d2c599dc0bf3307d544a449a3fdd")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokeApiNueva")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokeApiNueva")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

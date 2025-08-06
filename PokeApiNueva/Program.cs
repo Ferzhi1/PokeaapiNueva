@@ -24,6 +24,7 @@ builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationSc
 builder.Services.AddScoped<PasswordRecoveryService>();
 builder.Services.AddScoped<WeatherService>();
 builder.Services.AddScoped<TradeService>();
+builder.Services.AddScoped<AdminService>();
 builder.Services.AddSignalR();
 
 builder.Services.AddAuthorization();
